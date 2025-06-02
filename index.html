@@ -1,36 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel-project</title>
-  </head>
-<link rel="stylesheet" href="src/style.css">
-  <body>
-    <div class="container">
-      <header>
-        <h3>.TRAVEL.</h3>
-        <h1>Welcome to Joburg</h1>
-        <h2>City of Gold</h2>
-        <a href="https://en.wikipedia.org/wiki/Johannesburg">Learn more</a>
-      </header>
-      <main>
-        <section class="grid grid-2-columns">
-          <div>
-            <img src="images\sandton.jpg" alt="Sandton in Joburg" class="img-responsive">
-          </div>
-  </body>
+<body>
+  <div class="container">
+    <header>
+      <h3>.TRAVEL.</h3>
+      <h1>Welcome to Joburg</h1>
+      <h2>City of Gold</h2>
+      <a href="https://en.wikipedia.org/wiki/Johannesburg">Learn more</a>
+    </header>
 
-  <footer>
-    This project was coded by
-    <a href="https://github.com/SiiyaN" target="_blank">Noxolo(Siya) Ndlovu</a>
-    and is
-    <a href="https://github.com/SiiyaN/travel-project" target="_blank">
-      open sourced on GitHub</a
-    >
-    and
-    <a href="https://meek-sunshine-b637e0.netlify.app/" target="_blank">
-      hosted on Netlify</a
-    >
-  </footer>
-</html>
+    <main>
+      <section class="grid grid-2-columns">
+        <div>
+          <img
+            src="images/sandton.jpg"
+            alt="Sandton in Joburg"
+            class="img-responsive"
+          />
+        </div>
+        <div>
+          <!-- Card -->
+          <div class="card">
+            <h3>Sandton</h3>
+            <p>Known as the richest square mile in Africa.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Embed (e.g. Google Maps) -->
+      <section>
+        <h3>Find us on the map</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.249314297262!2d28.0567!3d-26.1076"
+          width="100%"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <!-- Table -->
+      <section>
+        <h3>Popular Spots</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Type</th>
+              <th>Entry Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sandton City</td>
+              <td>Mall</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Gold Reef City</td>
+              <td>Theme Park</td>
+              <td>R250</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      This project was coded by
+      <a href="https://github.com/SiiyaN" target="_blank"
+        >Noxolo(Siya) Ndlovu</a
+      >
+      and is
+      <a href="https://github.com/SiiyaN/travel-project" target="_blank">
+        open sourced on GitHub</a
+      >
+      and
+      <a href="https://meek-sunshine-b637e0.netlify.app/" target="_blank">
+        hosted on Netlify</a
+      >
+    </footer>
+  </div>
+</body>
