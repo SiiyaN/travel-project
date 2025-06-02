@@ -20,13 +20,15 @@ body {
 }
 
 header {
-  background-image: url("../images/Joburg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/Joburg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
   padding: 100px 20px;
   border-radius: 20px;
+  opacity: 0.6;
 }
 
 header h1 {
