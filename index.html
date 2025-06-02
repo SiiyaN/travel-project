@@ -1,84 +1,102 @@
-<body>
-  <div class="container">
-    <header>
-      <h3>.TRAVEL.</h3>
-      <h1>Welcome to Joburg</h1>
-      <h2>City of Gold</h2>
-      <a href="https://en.wikipedia.org/wiki/Johannesburg">Learn more</a>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joburg Travel</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>.TRAVEL.</h3>
+        <h1>Welcome to Joburg</h1>
+        <h2>City of Gold</h2>
+        <a href="https://en.wikipedia.org/wiki/Johannesburg" target="_blank"
+          >Learn more</a
+        >
+      </header>
 
-    <main>
-      <section class="grid grid-2-columns">
-        <div>
-          <img
-            src="images/sandton.jpg"
-            alt="Sandton in Joburg"
-            class="img-responsive"
-          />
-        </div>
-        <div>
-          <!-- Card -->
+      <main>
+        <section class="grid grid-2-columns">
+          <div>
+            <img
+              src="images/sandton.jpg"
+              alt="Sandton in Joburg"
+              class="img-responsive"
+            />
+          </div>
           <div class="card">
             <h3>Sandton</h3>
-            <p>Known as the richest square mile in Africa.</p>
+            <p>
+              Known as the richest square mile in Africa, Sandton boasts luxury
+              shopping, skyscrapers, and thriving business life.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Embed (e.g. Google Maps) -->
-      <section>
-        <h3>Find us on the map</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.249314297262!2d28.0567!3d-26.1076"
-          width="100%"
-          height="250"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
+        <section>
+          <h3>Popular Places to Visit</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Place</th>
+                <th>Type</th>
+                <th>Entry Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gold Reef City</td>
+                <td>Theme Park</td>
+                <td>R250</td>
+              </tr>
+              <tr>
+                <td>Soweto Tour</td>
+                <td>Cultural</td>
+                <td>R100</td>
+              </tr>
+              <tr>
+                <td>Sandton City</td>
+                <td>Shopping</td>
+                <td>Free</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h3>Find Joburg on the Map</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.201542264307!2d28.047305!3d-26.107599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c9a06322c39%3A0xf27e98c243a48941!2sSandton%20City%2C%201%20Sandton%20Dr%2C%20Sandhurst%2C%20Sandton%2C%202193!5e0!3m2!1sen!2sza!4v1717329920123!5m2!1sen!2sza"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/SiiyaN" target="_blank"
+          >Noxolo (Siya) Ndlovu</a
         >
-        </iframe>
-      </section>
-
-      <!-- Table -->
-      <section>
-        <h3>Popular Spots</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Place</th>
-              <th>Type</th>
-              <th>Entry Fee</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Sandton City</td>
-              <td>Mall</td>
-              <td>Free</td>
-            </tr>
-            <tr>
-              <td>Gold Reef City</td>
-              <td>Theme Park</td>
-              <td>R250</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-
-    <footer>
-      This project was coded by
-      <a href="https://github.com/SiiyaN" target="_blank"
-        >Noxolo(Siya) Ndlovu</a
-      >
-      and is
-      <a href="https://github.com/SiiyaN/travel-project" target="_blank">
-        open sourced on GitHub</a
-      >
-      and
-      <a href="https://meek-sunshine-b637e0.netlify.app/" target="_blank">
-        hosted on Netlify</a
-      >
-    </footer>
-  </div>
-</body>
+        and is
+        <a href="https://github.com/SiiyaN/travel-project" target="_blank"
+          >open-sourced</a
+        >
+        and
+        <a href="https://meek-sunshine-b637e0.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
+  </body>
+</html>

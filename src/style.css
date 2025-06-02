@@ -1,30 +1,98 @@
+:root {
+  --main-color: #ffbb33;
+  --accent-color: #222;
+  --light-bg: #fdf5db;
+  --text-light: #666;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--light-bg);
+  color: var(--accent-color);
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header {
+  background-image: url("../images/Joburg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  border-radius: 20px;
+}
+
+header h1 {
+  font-size: 64px;
+  margin: 20px 0 10px;
+}
+
+header h2 {
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+header h3 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin: 0;
+  opacity: 0.8;
+}
+
+header a {
+  background: white;
+  color: var(--accent-color);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+header a:hover {
+  background: var(--main-color);
+  color: white;
+}
+
+section {
+  margin: 60px 0;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  gap: 40px;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
 
 .card {
   background: white;
-  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
 }
 
 .img-responsive {
   width: 100%;
   display: block;
-  filter: brightness(0.9) contrast(1.1); /* CSS Filter applied */
-  border-radius: 10px;
-}
-
-iframe {
-  border-radius: 10px;
-  margin-top: 20px;
+  border-radius: 16px;
+  filter: brightness(0.95) contrast(1.1);
 }
 
 table {
@@ -35,12 +103,49 @@ table {
 
 th,
 td {
-  padding: 12px 15px;
-  text-align: left;
+  padding: 12px;
   border-bottom: 1px solid #ccc;
+  text-align: left;
 }
 
 thead {
-  background-color: #f3eacb;
-  font-weight: bold;
+  background: #fff1cc;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 14px;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 12px;
+}
+
+footer a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
 }
